@@ -4,7 +4,7 @@
 /**
 * main - entry point
 * Discription-cheking if number is positive
-* Return - always  #
+* Return:  always  #
 */
 int main(void)
 {
