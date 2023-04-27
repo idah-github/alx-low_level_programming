@@ -8,11 +8,16 @@
 
 int main(void)
 {
-	char a;
-
-	for (a = 'a'; a <= 'z'; ++a)
+	 int n = 97;
+	 
+	 
+	 
+	 while ( n <= 122 )
 {
-		printf("%c", a);
+
+		 putchar(n);
+		 n++;
 }
-	return (0);
+	 putchar('\n');
+	 return (0);
 }
