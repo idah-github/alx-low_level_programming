@@ -1,18 +1,16 @@
 #include <stdio.h>
-
 /**
-* main - entry point
-* Discription-cheking if number is positive
-* Return:  always  #
+* main- entry point
+* Return: will be #0
 */
-
 int main(void)
 {
-	
-	for (int alph = 97; alph <= 122; alph++);
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
 	{
-	putchar(alph);
+		putchar(c);
 	}
 	putchar('\n');
-	return (0);	
+	return (0);
 }
