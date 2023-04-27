@@ -8,16 +8,11 @@
 
 int main(void)
 {
-	 int n = 97;
-	 
-	 
-	 
-	 while ( n <= 122 )
-{
-
-		 putchar(n);
-		 n++;
-}
-	 putchar('\n');
-	 return (0);
+	
+	for (int alph = 97; alph <= 122; alph++);
+	{
+	putchar(alph);
+	}
+	putchar('\n');
+	return (0);	
 }
