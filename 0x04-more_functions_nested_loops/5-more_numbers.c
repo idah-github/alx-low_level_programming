@@ -9,16 +9,16 @@ void more_numbers(void)
 	int a;
 	int b;
 
-	b = a;
+	/*b = a;*/
 
 	while (b < 10)
 	{
-		a = 48;
+		a = 0;
 		while (a <= 14)
 		{
 			_putchar(a);
 			a++;
 		}
+		b++
 		_putchar ('\n');
-		b++;
 	}
