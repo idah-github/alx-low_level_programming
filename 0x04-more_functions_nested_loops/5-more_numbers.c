@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*more_numbers1 - prints numbers 10X
+*more_numbers - prints numbers 10X
 *
 *Retun: always #
 */
@@ -10,15 +10,14 @@ void more_numbers(void)
 	int b;
 
 	/*b = a;*/
-
-	while (b < 10)
+	for (a = 0; a <= 9; a++)
 	{
-		a = 0;
-		while (a <= 14)
+		for (b = 0; b <= 14; b++)
 		{
-			_putchar(a);
-			a++;
+			if (b <= 10)
+				_putchar(b / 10 + '0');
+			_putchar(b % 10 + '0');
 		}
-		b++
 		_putchar ('\n');
 	}
+}
