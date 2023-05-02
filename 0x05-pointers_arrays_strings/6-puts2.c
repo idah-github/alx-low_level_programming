@@ -8,17 +8,11 @@
 */
 void puts2(char *str)
 {
-	int i, j;
+	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
-/*
-	*{
-	*printf("%c", str[i]);
-	*}
-*/
-	for (j = 0; j < i; j += 2)
+	for (i = 0; str[i] != '\0' && str[i+1] != '\0'; i += 2)
 	{
-		printf("%c", str[i]);
+		putchar(str[i]);
 	}
-	printf("\n");
+	putchar('\n');
 }
