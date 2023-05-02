@@ -14,8 +14,11 @@ void print_array(int *a, int n)
 
 	for (arr = 0; arr < n - 1; arr++)
 	{
-		printf("%d, ", a[arr]);
-	}
-	printf("%d\n", a[n - 1]);
-}
+		if (arr == 0)
+			printf("%d, ", a[arr]);
 
+		else
+			printf("%d\n", a[n - 1]);
+	}
+	/*printf("%d\n", a[n - 1]);*/
+}
