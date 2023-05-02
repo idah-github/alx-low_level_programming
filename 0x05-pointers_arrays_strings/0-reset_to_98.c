@@ -8,12 +8,12 @@
 */
 void reset_to_98(int *n)
 {
-	int i;
+	/*int i;*/
 
 	/*n = &i;*/
 	*n = 98;
 	
-	printf("%d\n", i);
+	/*printf("%d\n", i);*/
 }
 
 
