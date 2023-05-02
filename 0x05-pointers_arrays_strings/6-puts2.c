@@ -8,13 +8,13 @@
 */
 void puts2(char *str)
 {
-	int i;
+	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		printf("%c", str[i]);
 	}
-	for (int j = 0; j < i; j += 2)
+	for (j = 0; j < i; j += 2)
 	{
 		putchar(str[i]);
 	}
