@@ -9,6 +9,9 @@
 */
 void _puts(char *str)
 {
-	puts(str);
+	if (*str; str++)
+	{
+	putchar(*str);
+	}
 	putchar('\n');
 }
