@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include "main.h"
+#include <math.h>
 /**
 * main -thee entry point
 *Return: will be 0#
 */
 int main(void)
 {
-	long int n , max, i;
+	long int n, max, i;
 
 	n = 612852475143;
 	max = -1;
@@ -24,8 +24,8 @@ int main(void)
 			n = n / i;
 		}
 	}
-	if ( n > 2)
+	if (n > 2)
 		max = n;
-	printf('&ld\n", max);
+	printf("%ld\n", max);
 	return (0);
 }
