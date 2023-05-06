@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* print_square  - draw a sqr, #,
-*@size: sqr size
+*print_square - prints sqr #
+*@size: the size of the sqr
 *
 */
 void print_square(int size)
@@ -12,11 +12,11 @@ void print_square(int size)
 	}
 	else
 	{
-		in w, h;
+		int h, w;
 
-		for (w = 0; w < size; w++)
+		for (h = 0; h < size; h++)
 		{
-			for (h = 0; h < size; h++)
+			for (w = 0; w < size; w++)
 			{
 				_putchar('#');
 			}
@@ -24,4 +24,3 @@ void print_square(int size)
 		}
 	}
 }
-
