@@ -1,13 +1,14 @@
 #include "main.h"
 /**
-*mul - thee func
-*@a: first int
-*@b: second value
-*Return: will be #
+*mul - multiplies 2numbers
+*@a: first num
+*@b: secon num
+*
+*Return: the results
 */
 int mul(int a, int b)
 {
-	int mul = a * b;
+	int res = a * b;
 
-	return (0);
+	return (res);
 }
