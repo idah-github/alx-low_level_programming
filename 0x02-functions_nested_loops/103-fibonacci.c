@@ -18,9 +18,9 @@ int main(void)
 	{
 		if (f < 400000 && (f % 2) == 0)
 		{
-			sum = sum + j;
+			sum = sum + f;
 		}
-		nxt = f + k;
+		nxt = f + s;
 		f = s;
 		s = nxt;
 	}
