@@ -12,5 +12,5 @@ void set_string(char **s, char *to)
 
 	to = &c;
 	s = &to;
-	s = to;
+	*s = to;
 }
