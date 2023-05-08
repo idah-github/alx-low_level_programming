@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 #include <stdio.h>
 /**
 *set_string - double pointer
@@ -12,5 +12,5 @@ void set_string(char **s, char *to)
 
 	to = &c;
 	s = &to;
-	s =to;
+	s = to;
 }
