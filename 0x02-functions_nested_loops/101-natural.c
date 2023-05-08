@@ -10,11 +10,11 @@ int main(void)
 	unsigned long int sum, num1, num2;
 	int i = 0;
 
-	num = 0;
+	sum = 0;
 	num1 = 0;
 	num2 = 0;
 
-	for (; i < 1024; 1++)
+	for (; i < 1024; i++)
 	{
 		if ((i % 3) == 0)
 		{
