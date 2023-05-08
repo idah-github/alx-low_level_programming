@@ -2,8 +2,6 @@
 /**
 *print_chessboard - prints the chessboar
 *@a: the chessboard arr var
-*@8: elements of the array
-*
 *
 */
 void print_chessboard(char (*a)[8])
@@ -16,9 +14,7 @@ void print_chessboard(char (*a)[8])
 		{
 			_putchar(a[x][y]);
 		}
-		if (y == 2);
+		if (y == 2)
 		_putchar('\n');
 	}
 }
-
-		
