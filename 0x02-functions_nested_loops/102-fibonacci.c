@@ -22,7 +22,7 @@ int main(void)
 		}
 		nxt = f + s;
 		f = s;
-		s = next;
+		s = nxt;
 	}
 	return (0);
 }
