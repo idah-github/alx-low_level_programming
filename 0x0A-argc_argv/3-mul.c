@@ -14,23 +14,26 @@ int main(int argc, char *argv[])
 	*for (c = 1; c < argc; c++)
 	*{
 		*if (argc == 3)
-		{*/
-	if (argc !=3)
-        {
-                printf("Error\n");
-                return (1);
-        }
-	
+		*{
+		*/
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
 	a = atoi(argv[1]);
 	b = atoi(argv[2]);
 	res = a * b;
-	
+
 	printf("%d\n", res);
 	return (0);
-	
-	/*if (argc !=3)
+
+	/*
+	*if (argc !=3)
 	*{
 		*printf("Error\n");
 		*return (1);
-	}*/
+	}
+	*/
 }
