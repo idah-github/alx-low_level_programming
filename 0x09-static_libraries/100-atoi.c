@@ -20,7 +20,7 @@ int _atoi(char *s)
 	}
 	for (; s[c] != '\0'; c++)
 	{
-		if ( s[c] >= '0' && s[c] <= '9') 
+		if (s[c] >= '0' && s[c] <= '9')
 		{
 			res = res * 10 + (s[c] - '0');
 		}
@@ -29,5 +29,5 @@ int _atoi(char *s)
 			return (0);
 		}
 	}
-	return sign * res;
+	return (sign * res);
 }
