@@ -9,22 +9,25 @@
 */
 int main(int argc, char *argv[])
 {
-	int c, sum = 0, a;
+	int c, sum = 0;
 
 	if (argc < 1)
 		printf("0\n");
 
-	for (c > 1; c < argc; c++)
+	for (c = 1; c < argc; c++)
 	{
-		/*
-		 * if ()
-			*printf("Error\n");
-			*return (1);
-			*printf("%s\n", argv[c]);
-			*/
+		if (*argv[c] >= '0' && *argv[c] <= '9')
+		{
 			sum = sum + atoi(argv[c]);
 			printf("%d\n", sum);
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
+	return (0);
 }
 
 
