@@ -10,20 +10,24 @@ int main(int argc, char *argv[])
 {
 	int a, b, res, c;
 
+	
 	for (c = 1; c < argc; c++)
 	{
 		if (argc == 3)
 		{
-			/*printf("%s, %s, %d,\n", argv[1], argv[2], res);*/
 			a = atoi(argv[1]);
 			b = atoi(argv[2]);
 			res = a * b;
+
 			printf("%d\n", res);
+			return (0);
 		}
-		if (argc < 3 || argc > 3)
+
+		if (argc !=3)
 		{
 			printf("Error\n");
 			return (1);
 		}
 	}
+	return (0);
 }
