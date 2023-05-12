@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int c, sum = 0;
 
-	if (argc < 1)
+	if (argc == 1)
 		printf("0\n");
 
 	for (c = 1; c < argc; c++)
@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 		if (*argv[c] >= '0' && *argv[c] <= '9')
 		{
 			sum = sum + atoi(argv[c]);
-			printf("%d\n", sum);
 		}
 		else
 		{
@@ -27,8 +26,6 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
+	printf("%d\n", sum);
 	return (0);
 }
-
-
-
