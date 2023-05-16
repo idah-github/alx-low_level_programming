@@ -35,11 +35,11 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 			b++;
 		}
-	}
-	while (c < width)
-	{
-		a[b][c] = 0;
-		c++;
+		while (c < width)
+		{
+			a[b][c] = 0;
+			c++;
+		}
 	}
 	return (a);
 }
