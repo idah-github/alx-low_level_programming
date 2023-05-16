@@ -31,14 +31,15 @@ int **alloc_grid(int width, int height)
 			for (; c <= b; c++)
 				free(a[c]);
 			free(a);
-			b++;
+			/*b++;*/
 			return (NULL);
+			b++;
 		}
-		while (c < width)
-		{
-			a[b][c] = 0;
-			c++;
-		}
-		return (a);
 	}
+	while (c < width)
+	{
+		a[b][c] = 0;
+		c++;
+	}
+	return (a);
 }
