@@ -7,5 +7,6 @@ int *array_range(int min, int max);
 int _putchar(char c)i;
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 /*int _putchar(char c);*/
+int main(int argc. char *argv[]);
 
 #endif
