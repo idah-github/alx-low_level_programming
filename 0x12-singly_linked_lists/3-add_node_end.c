@@ -12,8 +12,8 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *n;
 	list_t *temp = *head;
-	
-	
+
+
 	/*
 	 * unsigned int len;
 	*for (len = 0; (str[len]); len++)
