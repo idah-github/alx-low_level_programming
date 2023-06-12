@@ -22,8 +22,10 @@ int create_file(const char *filename, char *text_content)
 	of = open(filename, O_CREAT | O_RDWR | O_TRUNC, permissions);
 	wr = write(of, text_content, len);
 	if (of == -1 || wr == -1)
+	{
 		close(of);
 		return (-1);
+	}
 	close(of);
 	return (1);
 }
