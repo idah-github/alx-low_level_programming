@@ -19,11 +19,11 @@ int create_file(const char *filename, char *text_content)
 		while (text_content[len])
 			len++;
 	}
-	of = open(filename, O_CREAT | O_RDWR | O_TRUNC, permissions);
+	of = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	wr = write(of, text_content, len);
 	if (of == -1 || wr == -1)
 	{
-		close(of);
+		/*close(of);*/
 		return (-1);
 	}
 	close(of);
